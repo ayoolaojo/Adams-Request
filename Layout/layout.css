@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height:150vh;
+
+    background-color:yellow ;
+    width: 100%;
+    padding: 10px;
+   
+}
+
+header{
+ background-color: green;
+ flex: 1;
+
+}
+
+main{
+    
+    background-color: red ;
+    flex: 7;  
+    display: flex;;  
+}
+
+aside {
+   background-color: white;
+   flex: 1;
+}
+
+.main{
+   flex: 5;
+}
+
+
+footer{
+    background-color:blue;
+    flex: 2;
+    
+}

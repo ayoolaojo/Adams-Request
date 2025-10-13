@@ -1,0 +1,10 @@
+table,th,td{
+    border: 1px solid red;
+    
+}
+
+
+form input::placeholder {
+    background-color: yellow;
+    font-style: italic;
+}

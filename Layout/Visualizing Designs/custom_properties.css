@@ -1,0 +1,51 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Roboto;
+}
+
+
+
+:root{
+    --bg:lightblue;
+    --YellowBg:yellow;
+    --whiteText:white;
+    --blueText:blue;
+
+}
+
+body {
+    padding: 20px;
+    min-height: 100vh;
+    background-color:var(--bg) ;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+body div{
+    height: 17vh;
+    width: 30%;
+    background-color:blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:10px ;
+}
+
+body div:nth-child(odd){
+
+    background-color: var(--YellowBg);
+    color: var(--blueText);
+}
+
+body div:nth-child(even){
+    color:var(--whiteText) ;
+}
+
+.box1{
+    font-family:Nunito ;
+}

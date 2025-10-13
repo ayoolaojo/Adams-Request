@@ -1,0 +1,48 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: Nunito;
+}
+
+:root{
+   --yellowBg: yellow;
+   --blueBg: blue;
+   --whiteText: white;
+   --blueText: blue;
+   
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #d5efff;
+
+}
+
+body div{
+    height: 18vh;
+    width: 30%;
+    background-color:var(--blueBg) ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+body div:nth-child(odd){
+    background-color: var(--yellowBg);
+    border-radius: 10px;
+    color: var(--blueText);
+}
+
+body div:nth-child(even){
+    color: var(--whiteText);
+}
+

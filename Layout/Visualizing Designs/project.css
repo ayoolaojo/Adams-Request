@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    background-color:var(--bgColor) ;
+    
+}
+
+:root {
+    --bgColor:#F5EFE6;
+    --dancingFont:'Dancing Script', cursive;
+    --interFont:'Inter', sans-serif;
+    --nunitoFont:'Nunito', sans-serif;
+    --green:#5A7554;
+    --white:#FFFFFF;
+    --black:#030303;
+
+}
+
+
+header {
+    height: 8.8vh;
+    width: 100%;
+    display: flex;
+    padding: 0px 6.25rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_div{
+ display: flex;
+ gap: 4px;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.logo_div img {
+    height: 30px;
+    width: 33.33px;
+}
+
+
+
+
+.logo_div h1 {
+font-family:var(--dancingFont);
+font-weight: 700;
+font-style: Bold;
+font-size: 40px;
+line-height: 100%;
+letter-spacing: 0%;
+color: var(--green);
+
+}
+
+
+nav ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    
+}
+
+nav ul li a {
+    font-family: var(--interFont);
+    font-weight: 500;
+    font-style: medium;
+    font-size: 1.25rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--green);
+    text-decoration: none;
+
+}
+
+
+
+header button {
+  border: none;
+  font-family: var(Nunito);
+  font-size: 0.8rem;
+  color:var(--white);
+  background-color: var(--green);
+  height: 30px;
+  width: 100px ;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+
+
+} 
+
+
+
+
+
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    
+}
+
+
+
+
+  
+
+
+
+ .inner_balance {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: calc(1053px- 8.8vh);
+    width: 100%;
+    padding: 0px 6.25rem;
+    
+}
+
+.inner_balance_item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+}
+
+.inner_balance_item h1{
+font-family: var(--nunitoFont);
+font-weight: 700;
+font-style: Bold;
+font-size: 3rem;
+line-height: 100%;
+letter-spacing: 0%;
+color: var(--black);
+
+}
+
+.inner_balance_item span {
+font-family:var(--nunitoFont);
+font-weight: 700;
+font-style: Bold;
+font-size: 3rem;
+line-height: 100%;
+letter-spacing: 0%;
+color: var(--green);
+
+}
+
+.inner_balance_item p{
+font-family: var(--nunitoFont);
+font-weight: 500;
+font-style: Medium;
+font-size: 2.25rem;
+line-height: 100%;
+letter-spacing: 0%;
+color: var(--black);
+padding: 10px;
+
+}
+
+.inner_balance_item button {
+    border: none;
+    height: 48px;
+    width: 188px;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 24px;
+    text-align: center;
+    font-family: var(--interFont);
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 1rem;
+}
+
+.inner_balance_item img {
+    height: 550px;
+    width: 100%;
+}
+
+
+.hamburger {
+    display: none;
+    color: var(--green);
+    font-size:2rem ;
+    cursor: pointer;
+
+}
+
+#why_choose_us {
+    padding: none;
+    height: 75.2vh;
+    width: 100%;
+    background-color: var(--white);
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+#why_choose_us h1{
+font-family: var(--nunitoFont);
+font-weight: 700;
+font-style: Bold;
+font-size: 2.25rem;
+line-height: 100%;
+letter-spacing: 0%;
+color: var(--black);
+text-align: center;
+margin-top: 3rem ;
+}
+
+.why_choose_us_container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: calc(75.2vh - 3rem);
+    width: 100%;
+    background-color: yellow;
+}
+
+.why_choose_us_img_container {
+    flex: 2.5;
+    background-color: lightblue;
+    height: inherit;
+}
+
+.why_choose_us_text_container {
+    flex: 3;
+    background-color: blue;
+    height: inherit;
+}
+
+
+
+   
+
+
+
+
+
+  /* media queries */
+
+ @media screen and (max-width: 1000px) {
+    header nav, header button {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    header{
+        padding: 30px 20px;
+    }
+
+}
